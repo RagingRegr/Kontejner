@@ -16,10 +16,10 @@ namespace Kontejner.Helpers
 		}
 		public static Container CreateContainer()
 		{
-			int weight = Randomizer(100, 200);
-			int height = Randomizer(100, 200);
-			int length = Randomizer(100, 200);
-			int width = Randomizer(100, 200);
+			int weight = Randomizer(10, 50);
+			int height = Randomizer(10, 50);
+			int length = Randomizer(10, 50);
+			int width = Randomizer(10, 50);
 
 			return new Container(weight, height, length, width);
 		}
