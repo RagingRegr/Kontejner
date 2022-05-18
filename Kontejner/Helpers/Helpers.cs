@@ -1,0 +1,33 @@
+﻿using System;
+using Kontejner.Models;
+
+namespace Kontejner.Helpers
+{
+	public class Helpers
+	{
+		public static Box CreateBox()
+		{
+			int weight = Randomizer(1, 25);
+			int height = Randomizer(1, 25);
+			int length = Randomizer(1, 25);
+			int width = Randomizer(1, 25);
+
+			return new Box(weight, height, length, width);
+		}
+		public static Container CreateContainer()
+		{
+			int weight = Randomizer(100, 200);
+			int height = Randomizer(100, 200);
+			int length = Randomizer(100, 200);
+			int width = Randomizer(100, 200);
+
+			return new Container(weight, height, length, width);
+		}
+		public static int Randomizer(int min, int max)
+		{
+			Random rand = new Random();
+			return rand.Next(min, max);
+		}
+
+	}
+}
