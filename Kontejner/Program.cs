@@ -13,7 +13,9 @@ namespace Kontejner
 		static void Main(string[] args)
 		{
 			Container container = Helpers.Helpers.CreateContainer();
+			container.ContainerSpaceLeft();
 			AddBoxesUntilFull(container, BoxAmount);
+			Console.WriteLine("HOTOVO!!!!!!!");
 
 		}
 
@@ -23,7 +25,7 @@ namespace Kontejner
 			{
 				Box box = Helpers.Helpers.CreateBox();
 				Boxes.Add(box);
-				Console.WriteLine($"Box has {Box.Weight}kg and volume {Box.Volume}cm");
+				Console.WriteLine($"Box has {Box.Weight}kg and volume {box.AvailableVolume}cm");
 				if (container.SizeCheck(Boxes[i]))
 				{
 					Console.WriteLine("Container is full.");
