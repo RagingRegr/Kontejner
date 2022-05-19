@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace Kontejner.Models
 {
@@ -12,6 +13,11 @@ namespace Kontejner.Models
 		public double AvailableVolume { get; protected set; }
 		public Guid ContainerID { get; }
 
+        public void AddWeight(int addedWeight)
+        {
+			Weight += addedWeight;
+        }
+
 		public Base(int weight, int height, int length, int width)
 		{
 			Weight=weight;
@@ -19,7 +25,7 @@ namespace Kontejner.Models
 			Length=length;
 			Width=width;
 			AvailableVolume=Volume=height*length*width;
-            ContainerID = new Guid();
+            ContainerID = Guid.NewGuid();
 		}
 	}
 }

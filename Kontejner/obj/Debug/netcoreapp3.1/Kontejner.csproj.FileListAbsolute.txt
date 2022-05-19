@@ -1,0 +1,16 @@
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\Kontejner.exe
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\Kontejner.deps.json
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\Kontejner.runtimeconfig.json
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\Kontejner.runtimeconfig.dev.json
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\Kontejner.dll
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\Kontejner.pdb
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.csproj.AssemblyReference.cache
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.AssemblyInfoInputs.cache
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.AssemblyInfo.cs
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.csproj.CoreCompileInputs.cache
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.dll
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.pdb
+C:\Users\Keen Mate\source\repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.genruntimeconfig.cache
+C:\Users\Keen Mate\Source\Repos\Kontejner\Kontejner\bin\Debug\netcoreapp3.1\ConsoleTables.dll
+C:\Users\Keen Mate\Source\Repos\Kontejner\Kontejner\obj\Debug\netcoreapp3.1\Kontejner.csproj.CopyComplete

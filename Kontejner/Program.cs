@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Kontejner.Models;
 using Kontejner.Helpers;
+using ConsoleTables;
 
 namespace Kontejner
 {
@@ -18,11 +19,12 @@ namespace Kontejner
             container.GetContainerSpace();
             AddBoxesUntilFull(container, BoxAmount,initialBox);
             Console.WriteLine("HOTOVO!!!!!!!");
-            Console.WriteLine($"Pocet kontejneru je {Containers.Count}");
+            ConsoleTable table = new ConsoleTable("ContainerID", "Total Boxes", "Total Weight");
             foreach (Container containercount in Containers)
             {
-                Console.WriteLine($"pocet krabic je {containercount.GetContent().Count}");
+                containercount.GetTable(table);
             }
+            table.Write();
         }
 
 		private static void AddBoxesUntilFull(Container container, int BoxAmount, Box initialBox)
@@ -48,6 +50,7 @@ namespace Kontejner
 					break;
 				}
 				container.AddBox(Boxes[i]);
+                container.AddWeight(box.Weight);
 				Console.WriteLine(container.GetContainerSpace());
                 initialBox = null;
             }
