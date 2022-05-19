@@ -1,25 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Kontejner.Models
 {
 	public class Container:Base
 
-	{
-		public Guid ContainerID { get; private set; }
+    {
+        private List<Box> ContainerBoxes { get; set; }
 		public Container(int weight, int height, int length, int width) : base(weight, height, length, width)
 		{
-			ContainerID = new Guid();
+            ContainerBoxes = new List<Box>();
 		}
-		public void ContainerSpaceLeft()
+		public string GetContainerSpace()
 		{
-            Console.WriteLine($"{this.AvailableVolume} amount of space is left");
+            return $"{this.AvailableVolume} amount of space is left";
 		}
-
+        public List<Box> GetContent()
+        {
+            return ContainerBoxes.ToList();
+        }
 		public void AddBox(Box box)
 		{
-			this.AvailableVolume -= box.Volume;
+			this.ContainerBoxes.Add(box);
+            this.AvailableVolume -= box.Volume;
+
 		}
 
 		public void RemoveBox(Box box)
@@ -28,10 +34,8 @@ namespace Kontejner.Models
 		}
 
 		public bool SizeCheck(Box box)
-		{
-			if (box.AvailableVolume > this.AvailableVolume)
-				return true;
-			return false;
-		}
+        {
+            return box.AvailableVolume > this.AvailableVolume;
+        }
 	}
 }

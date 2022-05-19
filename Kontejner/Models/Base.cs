@@ -1,13 +1,16 @@
-﻿namespace Kontejner.Models
+﻿using System;
+
+namespace Kontejner.Models
 {
 	public abstract class Base
 	{
-		public static int Weight { get; private set; }
-		public int Height { get; private set; }
-		public int Length { get; private set; }
-		public int Width { get; private set; }
-		public double Volume { get; private set; }
+		public int Weight { get; private set; }
+		public int Height { get;  }
+		public int Length { get;  }
+		public int Width { get; }
+		public double Volume { get; }
 		public double AvailableVolume { get; protected set; }
+		public Guid ContainerID { get; }
 
 		public Base(int weight, int height, int length, int width)
 		{
@@ -16,6 +19,7 @@
 			Length=length;
 			Width=width;
 			AvailableVolume=Volume=height*length*width;
+            ContainerID = new Guid();
 		}
 	}
 }
