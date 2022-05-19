@@ -10,34 +10,47 @@ namespace Kontejner
 		public const int BoxAmount = 20;
 		public static List<Box> Boxes = new List<Box>();
 		public static List<Container> Containers = new List<Container>();
-		static void Main(string[] args)
-		{
-			Container container = Helpers.Helpers.CreateContainer();
-			container.ContainerSpaceLeft();
-			AddBoxesUntilFull(container, BoxAmount);
-			Console.WriteLine("HOTOVO!!!!!!!");
 
-		}
+        static void Main(string[] args)
+        {
+            Container container = Helpers.Helpers.CreateContainer();
+            Box initialBox = null;
+            container.GetContainerSpace();
+            AddBoxesUntilFull(container, BoxAmount,initialBox);
+            Console.WriteLine("HOTOVO!!!!!!!");
+            Console.WriteLine($"Pocet kontejneru je {Containers.Count}");
+            foreach (Container containercount in Containers)
+            {
+                Console.WriteLine($"pocet krabic je {containercount.GetContent().Count}");
+            }
+        }
 
-		private static void AddBoxesUntilFull(Container container, int boxAmount)
+		private static void AddBoxesUntilFull(Container container, int BoxAmount, Box initialBox)
 		{
-			for (int i = 0; i < BoxAmount; i++)
-			{
-				Box box = Helpers.Helpers.CreateBox();
-				Boxes.Add(box);
-				Console.WriteLine($"Box has {Box.Weight}kg and volume {box.AvailableVolume}cm");
+            Containers.Add(container);
+            Box box;
+            for (int i = 0; i < BoxAmount; i++)
+            {
+                if (initialBox == null)
+                     box = Helpers.Helpers.CreateBox();
+                else
+                    box = initialBox;
+			    Boxes.Add(box);
+
+				Console.WriteLine($"Box has {box.Weight}kg and volume {box.AvailableVolume}cm");
 				if (container.SizeCheck(Boxes[i]))
 				{
 					Console.WriteLine("Container is full.");
+                    Box remainingBox = box;
 					Boxes.RemoveAt(i);
-					Containers.Add(container);
-					Container NewContainer = Helpers.Helpers.CreateContainer();
-					AddBoxesUntilFull(NewContainer, BoxAmount - i);
+                    Container NewContainer = Helpers.Helpers.CreateContainer();
+					AddBoxesUntilFull(NewContainer, BoxAmount - i, remainingBox);
 					break;
 				}
 				container.AddBox(Boxes[i]);
-				container.ContainerSpaceLeft();
-			}
+				Console.WriteLine(container.GetContainerSpace());
+                initialBox = null;
+            }
 		}
 
 	}
