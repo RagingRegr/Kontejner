@@ -4,14 +4,29 @@ namespace Kontejner.Models
 {
     public class Ship
     {
-        private List<Container> ShipContainer { get; set; }
+        private List<Container> ContainersInside { get; set; }
         public Ship(Container container)
         {
-            ShipContainer = new List<Container>();
+            ContainersInside = new List<Container>();
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         public void AddContainer(Container container)
         {
-            this.ShipContainer.Add(container);
+            this.ContainersInside.Add(container);
         }
     }
 }

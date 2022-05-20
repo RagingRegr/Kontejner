@@ -14,10 +14,17 @@ namespace Kontejner.Models
         {
             ShipCount = shipcount;
             Ships = new List<Ship>();
+            ShipDistance = RandomizeArray(100,200);
         }
         public void AddContainer(Ship ship)
         {
             this.Ships.Add(ship);
+        }
+
+        public int[] RandomizeArray(int min,int max)
+        {
+            Random rand = new Random();
+            return new[] { rand.Next(min,max) };
         }
     }
 }
