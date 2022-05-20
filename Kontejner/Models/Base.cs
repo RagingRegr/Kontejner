@@ -11,7 +11,7 @@ namespace Kontejner.Models
 		public int Width { get; }
 		public double Volume { get; }
 		public double AvailableVolume { get; protected set; }
-		public Guid ContainerID { get; }
+		public string ContainerID { get; }
 
         public void AddWeight(int addedWeight)
         {
@@ -25,7 +25,16 @@ namespace Kontejner.Models
 			Length=length;
 			Width=width;
 			AvailableVolume=Volume=height*length*width;
-            ContainerID = Guid.NewGuid();
-		}
+            ContainerID = GetId();
+        }
+
+        public string GetId()
+        {
+            int one, two, three;
+            one = Helpers.Helpers.Randomizer(1, 9);
+			two = Helpers.Helpers.Randomizer(1, 9);
+			three = Helpers.Helpers.Randomizer(1, 9);
+			return one + "-" + two + three;
+        }
 	}
 }

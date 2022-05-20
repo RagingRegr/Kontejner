@@ -672,19 +672,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Keen Mate\\.nuget\\packages\\": {}
+    "C:\\Users\\Bob\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Keen Mate\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "projectUniqueName": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\Kontejner.csproj",
       "projectName": "Kontejner",
-      "projectPath": "C:\\Users\\Keen Mate\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
-      "packagesPath": "C:\\Users\\Keen Mate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Keen Mate\\Source\\Repos\\Kontejner\\Kontejner\\obj\\",
+      "projectPath": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "packagesPath": "C:\\Users\\Bob\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Keen Mate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

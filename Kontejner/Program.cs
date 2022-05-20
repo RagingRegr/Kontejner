@@ -8,7 +8,7 @@ namespace Kontejner
 {
 	internal class Program
 	{
-		public const int BoxAmount = 20;
+		public const int BoxAmount = 100;
 		public static List<Box> Boxes = new List<Box>();
 		public static List<Container> Containers = new List<Container>();
 
