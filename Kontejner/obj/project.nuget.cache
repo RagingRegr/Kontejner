@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6tdI4Eav5jChtQMZLuVHSE4aLKbRMOahiSSoy3JmJ4BcnFKdN2tivIcLzAQ160mxgP8ymSW5Cq+8DravH9UTKQ==",
+  "dgSpecHash": "eUdhJQGbl4kK+y9N5axqbQLHJYv7hLmApEWqnSP63AOguCF5DfnIVy1YJaibTLSgfNQWBXC1lyytdFcttlqHvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\Kontejner.csproj",
+  "projectFilePath": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bob\\.nuget\\packages\\consoletables\\2.4.2\\consoletables.2.4.2.nupkg.sha512",
     "C:\\Users\\Bob\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

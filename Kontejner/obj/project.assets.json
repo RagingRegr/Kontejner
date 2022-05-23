@@ -677,11 +677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "projectUniqueName": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
       "projectName": "Kontejner",
-      "projectPath": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "projectPath": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
       "packagesPath": "C:\\Users\\Bob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bob\\Documents\\GitHub\\Hanzlik\\Kontejner\\Kontejner\\obj\\",
+      "outputPath": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
