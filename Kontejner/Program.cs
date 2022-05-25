@@ -35,13 +35,17 @@ namespace Kontejner
             {
 	            case 1:
 	            {
-		            ConsoleTable table = new ConsoleTable("ContainerID", "Total Boxes", "Total Weight");
+		            ConsoleTable table = new ConsoleTable("ShipID","ContainerID", "Total Boxes", "Total Weight");
 		            foreach (Container containercount in Containers)
 		            {
-			            Helpers.Helpers.GetTable(table,container);
+			            containercount.GetTable(table,container);
 		            }
-
-		            table.Write();
+                    table.Write();
+                    Console.WriteLine("Ships");
+                    foreach (Ship ship in port.Ships)
+                    {
+                        Console.WriteLine(container.Location.shipID);
+                    }
 	            }
 		            break;
 	            case 2:
@@ -57,7 +61,7 @@ namespace Kontejner
 		            {
               Console.WriteLine("Enter the ship you want to move it to");
               shipId = Console.ReadLine();
-            } while ();
+            } while (shipId==null);
 	            }
 		            break;
 	            case 3:

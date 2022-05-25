@@ -27,10 +27,10 @@ namespace Kontejner.Models
 			Length=length;
 			Width=width;
 			AvailableVolume=Volume=height*length*width;
-            ContainerID = GetId();
+            ContainerID = GetId(CustomIds);
         }
 
-        public string GetId()
+        public string GetId(List<string> list)
         {
             string id;
             int one, two, three;

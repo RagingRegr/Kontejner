@@ -672,19 +672,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adam\\.nuget\\packages\\": {}
+    "C:\\Users\\Keen Mate\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "projectUniqueName": "C:\\Git\\RagingRegr\\Kontejner\\Kontejner.csproj",
       "projectName": "Kontejner",
-      "projectPath": "C:\\Users\\Adam\\source\\repos\\Kontejner\\Kontejner\\Kontejner.csproj",
-      "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adam\\source\\repos\\Kontejner\\Kontejner\\obj\\",
+      "projectPath": "C:\\Git\\RagingRegr\\Kontejner\\Kontejner.csproj",
+      "packagesPath": "C:\\Users\\Keen Mate\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\RagingRegr\\Kontejner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Keen Mate\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -730,7 +730,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

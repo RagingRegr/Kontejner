@@ -45,5 +45,9 @@ namespace Kontejner.Models
             return box.AvailableVolume > this.AvailableVolume;
         }
 
+        public void GetTable(ConsoleTable table,Container container)
+        {
+            table.AddRow($"{container.Location.shipID}", $"{ContainerID}", $"{ContainerBoxes.Count}", $"{Weight}");
+        }
 	}
 }
