@@ -21,20 +21,52 @@ namespace Kontejner
             container.GetContainerSpace();
             AddBoxesUntilFull(container, BoxAmount, initialBox);
             Console.WriteLine("HOTOVO!!!!!!!");
-            ConsoleTable table = new ConsoleTable("ContainerID", "Total Boxes", "Total Weight");
-            foreach (Container containercount in Containers)
-            {
-                containercount.GetTable(table);
-            }
-
-            table.Write();
             Port port = new Port(shipcount);
 
             for (int i = 0; i < shipcount; i++)
             {
-                port.AddShip(new Ship(container));
+	            port.AddShip(new Ship(container,1000,100,100,100));
             }
-            port.MoveContainer(1,0,1);
+            port.MoveContainer(1, 0, 1);
+
+      Console.WriteLine("Please select \n1 for a table of all boxes\n2 to move a container \n3 to unload a container to the dock");
+            int input = Convert.ToInt32(Console.ReadLine());
+            switch (input)
+            {
+	            case 1:
+	            {
+		            ConsoleTable table = new ConsoleTable("ContainerID", "Total Boxes", "Total Weight");
+		            foreach (Container containercount in Containers)
+		            {
+			            Helpers.Helpers.GetTable(table,container);
+		            }
+
+		            table.Write();
+	            }
+		            break;
+	            case 2:
+	            {
+		            string containerId, shipId;
+		            do
+		            {
+			            Console.WriteLine("Enter the container you want to move");
+                  containerId= Console.ReadLine();
+		            } while (container.ContainerID.Contains(containerId)==false);
+
+		            do
+		            {
+              Console.WriteLine("Enter the ship you want to move it to");
+              shipId = Console.ReadLine();
+            } while ();
+	            }
+		            break;
+	            case 3:
+	            {
+
+	            }
+		            break;
+            }
+
         }
 
         private static void AddBoxesUntilFull(Container container, int BoxAmount, Box initialBox)

@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleTables;
 using Kontejner.Models;
 
 namespace Kontejner.Helpers
@@ -28,6 +29,9 @@ namespace Kontejner.Helpers
 			Random rand = new Random();
 			return rand.Next(min, max);
 		}
-
+		public static void GetTable(ConsoleTable table,Container container)
+		{
+			table.AddRow($"{container.Location.ShipId}",$"{container.ContainerID}", $"{container.ContainerBoxes.Count}", $"{container.Weight}");
+		}
 	}
 }

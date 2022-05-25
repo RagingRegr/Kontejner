@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using ConsoleTables;
@@ -9,11 +10,15 @@ namespace Kontejner.Models
 	public class Container:Base
 
     {
-        private List<Box> ContainerBoxes { get; set; }
+	    public List<Box> ContainerBoxes { get; set; }
 		public Container(int weight, int height, int length, int width) : base(weight, height, length, width)
 		{
             ContainerBoxes = new List<Box>();
+            Location = null;
 		}
+
+		public Ship Location { get; set; }
+
 		public string GetContainerSpace()
 		{
             return $"{this.AvailableVolume} amount of space is left";
@@ -40,9 +45,5 @@ namespace Kontejner.Models
             return box.AvailableVolume > this.AvailableVolume;
         }
 
-        public void GetTable(ConsoleTable table)
-        {
-            table.AddRow($"{ContainerID}", $"{ContainerBoxes.Count}", $"{Weight}");
-        }
 	}
 }

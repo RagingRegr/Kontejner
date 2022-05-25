@@ -672,19 +672,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bob\\.nuget\\packages\\": {}
+    "C:\\Users\\Adam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\Kontejner\\Kontejner\\Kontejner.csproj",
       "projectName": "Kontejner",
-      "projectPath": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\Kontejner.csproj",
-      "packagesPath": "C:\\Users\\Bob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bob\\Source\\Repos\\Kontejner\\Kontejner\\obj\\",
+      "projectPath": "C:\\Users\\Adam\\source\\repos\\Kontejner\\Kontejner\\Kontejner.csproj",
+      "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adam\\source\\repos\\Kontejner\\Kontejner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -730,7 +730,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

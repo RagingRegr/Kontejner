@@ -2,10 +2,11 @@
 
 namespace Kontejner.Models
 {
-    public class Ship
+    public class Ship:Base
     {
         public List<Container> ContainersInside { get; set; }
-        public Ship(Container container)
+        public string ShipId { get; set; }
+        public Ship(Container container,int weight, int height,int length, int width):base(weight,height,length,width)
         {
             ContainersInside = new List<Container>();
             AddContainer(container);
